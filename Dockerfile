@@ -23,6 +23,8 @@ COPY --chown=user data data
 COPY --chown=user sources sources
 COPY --chown=user scripts scripts
 COPY --from=web --chown=user /web/out frontend/out
+# runtime state (sqlite + search index) lives in backend/data; the app user must own the whole tree
+RUN mkdir -p /app/backend/data /app/backend/.cache && chown -R user:user /app
 
 USER user
 # MALLOC_ARENA_MAX / *_NUM_THREADS keep memory low enough for 512 MB free hosting tiers (e.g. Render free)
