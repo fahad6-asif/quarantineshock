@@ -273,7 +273,6 @@ export type Evals = {
     reviewed_by_human: boolean;
     method: string;
   };
-  rules: { gold_count: number; matched: number; extracted_count: number; method: string; rows: { id: string; description: string; keywords: string[]; matched_rule: string | null }[] };
   grounding: { total: number; verified: number; supports: number; judged: number; verified_pct: number | null; supports_pct: number | null; per_run: { notice_id: string; total: number; verified: number; supports: number; judged: number }[] };
   zones: { notice_id: string; title: string; effective_date: string; generated: number; official: number | null; error_pct: number | null }[];
   radius: AppState["radius"];

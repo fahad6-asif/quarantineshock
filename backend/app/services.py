@@ -113,11 +113,3 @@ def labels() -> tuple[dict[str, dict], bool]:
     for r in csv.DictReader(lines):
         rows[r["id"]] = r
     return rows, reviewed
-
-
-def gold_rules() -> list[dict]:
-    p = DATA / "gold_rules.json"
-    if not p.exists():
-        return []
-    data = json.loads(p.read_text("utf-8"))
-    return [g for g in data.get("rules", []) if g.get("keywords")]

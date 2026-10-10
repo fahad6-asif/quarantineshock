@@ -1,4 +1,4 @@
-"""Evaluation: normalizer vs labels.csv, rules vs gold_rules.json, citation grounding, zone area error."""
+"""Evaluation: normalizer vs labels.csv, citation grounding, zone area error."""
 from __future__ import annotations
 
 import json
@@ -48,21 +48,7 @@ def run_evals() -> dict:
                   "confusion": confusion, "rows": rows, "reviewed_by_human": reviewed,
                   "method": "exact match of canonical name; host status = code lookup in the official host lists, 'unclear' for frozen/processed/dried/mixed forms"}
 
-    # 2. rule extraction vs gold rules (keyword method)
-    gold = services.gold_rules()
-    extracted = (latest.get("ruleset") or {}).get("rules", [])
-    hay = [(r["id"], " ".join([r["requirement"], r["quote"], " ".join(r["applies_to"]), " ".join(r["exemptions"]),
-                               " ".join(r["conditions"])]).lower()) for r in extracted]
-    gold_rows = []
-    for g in gold:
-        kws = [k.lower() for k in g["keywords"]]
-        hit = next((rid for rid, text in hay if all(k in text for k in kws)), None)
-        gold_rows.append({"id": g.get("id"), "description": g.get("description", ""), "keywords": g["keywords"], "matched_rule": hit})
-    rules = {"gold_count": len(gold), "matched": sum(1 for r in gold_rows if r["matched_rule"]), "rows": gold_rows,
-             "extracted_count": len(extracted),
-             "method": "keyword matching: a gold rule counts as found if one extracted rule contains all its keywords"}
-
-    # 3. citation grounding across all runs
+    # 2. citation grounding across all runs
     tot = sum((r.get("grounding") or {}).get("total", 0) for r in results)
     ver = sum((r.get("grounding") or {}).get("verified", 0) for r in results)
     sup = sum((r.get("grounding") or {}).get("supports", 0) for r in results)
@@ -72,13 +58,13 @@ def run_evals() -> dict:
                  "supports_pct": round(sup / judged * 100, 1) if judged else None,
                  "per_run": [{"notice_id": r["notice_id"], **(r.get("grounding") or {})} for r in results]}
 
-    # 4. zone accuracy
+    # 3. zone accuracy
     zones = [{"notice_id": r["notice_id"], "title": r["notice"]["title"], "effective_date": r["notice"]["effective_date"],
               "generated": r["zone"]["area_sq_mi"], "official": r["zone"]["official_sq_mi"],
               "error_pct": r["zone"]["error_pct"]} for r in results]
 
     out = {"computed_at": datetime.now(timezone.utc).isoformat(), "runs_evaluated": len(results),
-           "normalizer": normalizer, "rules": rules, "grounding": grounding, "zones": zones,
+           "normalizer": normalizer, "grounding": grounding, "zones": zones,
            "radius": latest.get("radius")}
     (DATA / "eval_results.json").write_text(json.dumps(out, indent=2), "utf-8")
     return out

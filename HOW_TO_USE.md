@@ -65,5 +65,4 @@ To stop: click the PowerShell window and press **Ctrl + C**.
 
 ## 8. Your homework
 1. **`data/labels.csv`**: check each row (is the commodity right? host / not_host / unclear?). Then change `false` to `true` on the first line.
-2. **`data/gold_rules.json`**: write 6–8 rules in your own words from the regulations, each with 2–4 keywords. The Evals page then scores the AI against you.
-3. **OpenRouter** (optional backup AI): when you want it, tell Claude and pick a model from the options it gives you.
+2. **OpenRouter** (backup AI) is already set up with `openai/gpt-oss-120b`; just keep a little credit on your OpenRouter account.

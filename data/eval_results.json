@@ -1,5 +1,5 @@
 {
-  "computed_at": "2026-10-10T17:09:58.421921+00:00",
+  "computed_at": "2026-10-10T17:58:01.450304+00:00",
   "runs_evaluated": 5,
   "normalizer": {
     "n": 25,
@@ -301,13 +301,6 @@
     ],
     "reviewed_by_human": false,
     "method": "exact match of canonical name; host status = code lookup in the official host lists, 'unclear' for frozen/processed/dried/mixed forms"
-  },
-  "rules": {
-    "gold_count": 0,
-    "matched": 0,
-    "rows": [],
-    "extracted_count": 12,
-    "method": "keyword matching: a gold rule counts as found if one extracted rule contains all its keywords"
   },
   "grounding": {
     "total": 85,

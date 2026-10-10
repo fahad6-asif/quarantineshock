@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowLeft, CheckCircle2, Loader2, RefreshCw, ShieldAlert, TriangleAlert } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Loader2, RefreshCw, TriangleAlert } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
@@ -142,7 +142,7 @@ export default function EvalsPage() {
             </p>
           </Card>
 
-          <Card title="Zone accuracy: generated vs official area">
+          <Card title="Zone accuracy: generated vs official area" className="md:col-span-2">
             <div className="h-56">
               <ResponsiveContainer>
                 <BarChart data={e.zones.map((z) => ({ name: fmtDate(z.effective_date), generated: z.generated, official: z.official }))}>
@@ -166,32 +166,6 @@ export default function EvalsPage() {
             <p className="mt-2 text-[11px] text-muted-foreground">
               Generated zones are {e.radius?.miles ?? 4.5}-mile circles around town centers (notices don&apos;t give trap addresses). Official
               boundaries follow roads and are widened so commercial host properties aren&apos;t split (CCR 3417(b)(3)), so ours run smaller.
-            </p>
-          </Card>
-
-          <Card title="Rule extraction vs gold rules">
-            {e.rules.gold_count === 0 ? (
-              <p className="text-sm text-amber-400">
-                No gold rules written yet. Fahad writes 6–8 rules by hand in <span className="mono">data/gold_rules.json</span>; this card then scores the
-                extractor against them.
-              </p>
-            ) : (
-              <>
-                <Big value={`${e.rules.matched}/${e.rules.gold_count}`} label="gold rules found by the extractor" />
-                <ul className="mt-3 space-y-1 text-xs">
-                  {e.rules.rows.map((r) => (
-                    <li key={r.id} className="flex gap-2">
-                      {r.matched_rule ? <CheckCircle2 className="size-3.5 shrink-0 text-emerald-400" /> : <ShieldAlert className="size-3.5 shrink-0 text-red-400" />}
-                      <span>
-                        <span className="mono">{r.id}</span> {r.description} {r.matched_rule && <span className="text-muted-foreground">→ {r.matched_rule}</span>}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            )}
-            <p className="mt-3 text-[11px] text-muted-foreground">
-              {e.rules.extracted_count} rules extracted in the latest run. Method: {e.rules.method}.
             </p>
           </Card>
 

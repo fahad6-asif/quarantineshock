@@ -127,7 +127,7 @@ tier. It also runs on Hugging Face Spaces or any Docker host. A GitHub Action (`
 pings the site every 10 minutes so the free instance doesn't fall asleep. The saved AI answers in `backend/.cache/` ship with it, so the demo works with
 no API keys. To let visitors ask new chat questions live, add `GEMINI_API_KEY` (and optionally `OPENROUTER_API_KEY`)
 as secrets in the Space settings.
-* `data/labels.csv` is a draft answer key until a human reviews it; `data/gold_rules.json` must be written by a human.
+* `data/labels.csv` is a draft answer key until a human reviews it.
 
 ## Sources (all fetched 2026-10-10; full list in `sources/manifest.json`)
 * USDA APHIS [DA-2026-16](https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-area-california), [DA-2026-36](https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county), [DA-2026-20 host lists](https://www.aphis.usda.gov/news/program-update/aphis-establishes-host-lists-regulated-articles-three-tephritid-fruit-fly)

@@ -67,9 +67,6 @@ async def main() -> None:
     reviewed = labels()[1]
     line(OK if reviewed else WARN, "labels.csv reviewed by a human" if reviewed
          else "labels.csv not yet reviewed by Fahad (evals will say so)")
-    gold = DATA / "gold_rules.json"
-    n_gold = len([g for g in json.loads(gold.read_text("utf-8")).get("rules", []) if g.get("keywords")]) if gold.exists() else 0
-    line(OK if n_gold >= 6 else WARN, f"gold_rules.json: {n_gold} rules written by Fahad")
 
     from app.geo.geocode import geocode_sync
     g = geocode_sync("El Cajon")
