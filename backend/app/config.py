@@ -36,15 +36,16 @@ class Settings:
         mode = (os.getenv("LLM_PROVIDER") or "auto").strip().lower()
         self.provider_mode = mode if mode in PROVIDER_MODES else "auto"
         self.gemini_api_key = (os.getenv("GEMINI_API_KEY") or "").strip()
-        self.gemini_model_fast = (os.getenv("GEMINI_MODEL_FAST") or "").strip()
-        self.gemini_model_strong = (os.getenv("GEMINI_MODEL_STRONG") or self.gemini_model_fast).strip()
+        self.gemini_model_fast = (os.getenv("GEMINI_MODEL_FAST") or "gemini-3.5-flash-lite").strip()
+        self.gemini_model_strong = (os.getenv("GEMINI_MODEL_STRONG") or "gemini-3.5-flash").strip()
         self.gemini_rpm = _f("GEMINI_RPM", 10)
         self.gemini_timeout_s = _f("GEMINI_TIMEOUT_S", 90)
-        self.gemini_model_backup = (os.getenv("GEMINI_MODEL_BACKUP") or "").strip()
+        self.gemini_model_backup = (os.getenv("GEMINI_MODEL_BACKUP") or "gemini-2.5-flash").strip()
+        self.chat_limit_per_hour = int(_f("CHAT_LIMIT_PER_HOUR", 0))  # 0 = unlimited (local); set on public deploys
         # last-resort "closest cached answer" fallback; warm_cache.py turns it off so stale answers never get cached as fresh
         self.allow_near_fallback = True
         self.openrouter_api_key = (os.getenv("OPENROUTER_API_KEY") or "").strip()
-        self.openrouter_model = (os.getenv("OPENROUTER_MODEL") or "").strip()
+        self.openrouter_model = (os.getenv("OPENROUTER_MODEL") or "openai/gpt-oss-120b").strip()
         self.openrouter_rpm = _f("OPENROUTER_RPM", 20)
         self.radius_miles_config = _f("QUARANTINE_RADIUS_MILES", 4.5)
         # demo pacing: small delays so the Agent Activity stepper is watchable when answers come from cache

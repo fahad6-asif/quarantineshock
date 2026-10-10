@@ -120,8 +120,11 @@ npm run e2e              # Playwright demo path in replay mode (needs warm_cache
 * Basemap tiles need internet. Everything else works offline in replay mode.
 
 ## Deployment
-The `Dockerfile` builds one container (static website + API on port 7860) and runs on Hugging Face Spaces
-(Docker SDK) or any Docker host. The saved AI answers in `backend/.cache/` ship with it, so the demo works with
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/fahad6-asif/quarantineshock)
+
+The `Dockerfile` builds one container (static website + API) and `render.yaml` deploys it on Render's free
+tier. It also runs on Hugging Face Spaces or any Docker host. A GitHub Action (`.github/workflows/keepalive.yml`)
+pings the site every 10 minutes so the free instance doesn't fall asleep. The saved AI answers in `backend/.cache/` ship with it, so the demo works with
 no API keys. To let visitors ask new chat questions live, add `GEMINI_API_KEY` (and optionally `OPENROUTER_API_KEY`)
 as secrets in the Space settings.
 * `data/labels.csv` is a draft answer key until a human reviews it; `data/gold_rules.json` must be written by a human.

@@ -1,5 +1,5 @@
 # QuarantineShock: one container = website (static Next.js export) + API (FastAPI) on port 7860.
-# Built for Hugging Face Spaces (Docker SDK), works on any Docker host.
+# Deployed on Render (render.yaml); also works on Hugging Face Spaces or any Docker host.
 
 # ---------- 1. build the website ----------
 FROM node:22-slim AS web
@@ -25,8 +25,12 @@ COPY --chown=user scripts scripts
 COPY --from=web --chown=user /web/out frontend/out
 
 USER user
+# MALLOC_ARENA_MAX / *_NUM_THREADS keep memory low enough for 512 MB free hosting tiers (e.g. Render free)
 ENV HOME=/home/user \
     PYTHONUNBUFFERED=1 \
+    MALLOC_ARENA_MAX=2 \
+    OMP_NUM_THREADS=1 \
+    ORT_NUM_THREADS=1 \
     LLM_PROVIDER=auto \
     STATIC_DIR=/app/frontend/out \
     DEMO_AUTOSTART=2026-06-16_spring-valley-established \
@@ -36,4 +40,5 @@ ENV HOME=/home/user \
 RUN python scripts/ingest.py
 
 EXPOSE 7860
-CMD ["python", "-m", "uvicorn", "app.main:app", "--app-dir", "backend", "--host", "0.0.0.0", "--port", "7860"]
+# $PORT is set by Render (and most hosts); 7860 otherwise (Hugging Face Spaces)
+CMD ["sh", "-c", "exec python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port ${PORT:-7860}"]

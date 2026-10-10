@@ -322,7 +322,11 @@ export async function streamChat(question: string, onEvent: (e: ChatEvent) => vo
     return;
   }
   if (!res.ok || !res.body) {
-    onEvent({ type: "error", message: `Chat failed (${res.status})` });
+    let message = `Chat failed (${res.status})`;
+    try {
+      message = (await res.json()).detail || message;
+    } catch {}
+    onEvent({ type: "error", message });
     return;
   }
   const reader = res.body.getReader();

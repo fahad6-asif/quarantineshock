@@ -16,7 +16,8 @@ def _get_client():
     from openai import AsyncOpenAI
 
     if _client is None or _client_key != settings.openrouter_api_key:
-        _client = AsyncOpenAI(base_url=BASE_URL, api_key=settings.openrouter_api_key, timeout=90,
+        # max_retries=0: our client.py owns retries/failover; the SDK's hidden retries could triple a hang
+        _client = AsyncOpenAI(base_url=BASE_URL, api_key=settings.openrouter_api_key, timeout=75, max_retries=0,
                               default_headers={"HTTP-Referer": "http://localhost:3000", "X-Title": "QuarantineShock"})
         _client_key = settings.openrouter_api_key
     return _client

@@ -1,0 +1,13 @@
+# Render's free tier sleeps after 15 idle minutes; a judge's first visit would then wait ~1 minute.
+# This pings the live demo every 10 minutes so it stays awake. Free for public repos.
+name: keep-demo-awake
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping the live demo
+        run: curl -fsS --max-time 120 "${{ vars.DEMO_URL || 'https://quarantineshock.onrender.com' }}/api/health" || true

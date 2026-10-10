@@ -1,0 +1,29 @@
+# Render Blueprint: Render dashboard -> New -> Blueprint -> pick this repo -> fill the two keys -> Apply.
+services:
+  - type: web
+    name: quarantineshock
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      # secrets: you type these in the Render dashboard (never committed)
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: LLM_PROVIDER
+        value: auto
+      - key: GEMINI_MODEL_FAST
+        value: gemini-3.5-flash-lite
+      - key: GEMINI_MODEL_STRONG
+        value: gemini-3.5-flash
+      - key: GEMINI_MODEL_BACKUP
+        value: gemini-2.5-flash
+      - key: GEMINI_TIMEOUT_S
+        value: "40"
+      - key: OPENROUTER_MODEL
+        value: openai/gpt-oss-120b
+      - key: CHAT_LIMIT_PER_HOUR
+        value: "30"

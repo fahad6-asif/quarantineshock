@@ -5,8 +5,9 @@ import asyncio
 import csv
 import io
 import json
+import time
 
-from fastapi import APIRouter, BackgroundTasks, HTTPException
+from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 from sse_starlette.sse import EventSourceResponse
@@ -249,11 +250,31 @@ class ChatIn(BaseModel):
     question: str
 
 
+_chat_hits: dict[str, list[float]] = {}
+
+
+def _chat_allowed(ip: str) -> bool:
+    """Per-visitor hourly cap on chat questions (protects the API budget on public deployments)."""
+    limit = settings.chat_limit_per_hour
+    if limit <= 0:
+        return True
+    now = time.time()
+    hits = [t for t in _chat_hits.get(ip, []) if now - t < 3600]
+    if len(hits) >= limit:
+        _chat_hits[ip] = hits
+        return False
+    _chat_hits[ip] = hits + [now]
+    return True
+
+
 @router.post("/chat")
-async def chat(body: ChatIn):
+async def chat(body: ChatIn, request: Request):
     q = body.question.strip()
     if not q:
         raise HTTPException(400, "empty question")
+    ip = (request.headers.get("x-forwarded-for") or (request.client.host if request.client else "?")).split(",")[0].strip()
+    if q not in SCRIPTED and not _chat_allowed(ip):  # suggested questions are served from saved answers: free
+        raise HTTPException(429, "Chat limit reached for this hour. The suggested questions still work from saved answers.")
 
     async def gen():
         async for ev in answer_stream(q[:500]):
