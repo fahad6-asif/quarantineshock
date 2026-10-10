@@ -36,8 +36,11 @@ export function ProviderPill({ mode, refreshKey }: { mode: string; refreshKey: n
     };
   }, [mode, refreshKey]);
   const g = h?.gemini.status;
-  const ok = mode === "replay" || g === "ok" || h?.openrouter.status === "ok";
-  const label = mode === "replay" ? "Offline replay" : ok ? "AI ready" : g ? "AI issue" : "Checking AI…";
+  // no keys at all (e.g. the public demo): everything is served from the saved answers, which is fine
+  const savedOnly = g === "not_configured" && h?.openrouter.status === "not_configured";
+  const ok = mode === "replay" || savedOnly || g === "ok" || h?.openrouter.status === "ok";
+  const label =
+    mode === "replay" ? "Offline replay" : savedOnly ? "Saved answers" : ok ? "AI ready" : g ? "AI issue" : "Checking AI…";
   const title =
     mode === "replay" ? "Replay mode: saved answers only, no internet needed" : `Mode: ${mode} · Gemini: ${g ?? "?"} · OpenRouter: ${h?.openrouter.status ?? "?"}`;
   return (
