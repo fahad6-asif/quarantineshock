@@ -13,7 +13,7 @@ short_description: Notice in, rules out, shipments flagged.
 
 **Notice in, rules out, shipments flagged.**
 
-**▶ Live demo:** _LIVE_URL_ · **Code:** _REPO_URL_
+**▶ Live demo:** https://fahad6-quarantineshock.hf.space · **Code:** https://github.com/fahad6-asif/quarantineshock
 
 When the government expands a pest quarantine, QuarantineShock's AI agent reads the new notice, redraws the
 quarantine zone from the text, checks every shipment a distributor has scheduled, and says within minutes which
