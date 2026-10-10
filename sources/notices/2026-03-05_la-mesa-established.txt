@@ -1,0 +1,8 @@
+# title: La Mesa quarantine established
+# effective_date: 2026-03-05
+# source: NAPPO Official Pest Report 1191: APHIS Establishes a Quarantine Area in California (Mexfly) <https://www.pestalerts.org/nappo/official-pest-reports/1191/> (retrieved 2026-10-10); NAPPO Official Pest Report 1191: APHIS Establishes a Quarantine Area in California (Mexfly) <https://www.pestalerts.org/nappo/official-pest-reports/1191/> (retrieved 2026-10-10)
+# note: verbatim excerpt(s); see manifest.json
+# ---
+On March 5, 2026, the Animal and Plant Health Inspection Service (APHIS) and the California Department of Food and Agriculture (CDFA) established a Mexican fruit fly ( Anastrepha ludens; Mexfly) quarantine in La Mesa, San Diego County, California, designated the La Mesa quarantine.
+
+APHIS and CDFA established the La Mesa quarantine in response to the February 24 detection of a wild mated female Mexfly from a trap in a loquat tree on a residential property. The quarantine encompassed approximately 77 square miles and contained no commercial agriculture.

@@ -1,0 +1,30 @@
+# reviewed_by_human: false
+# Drafted by Claude Code from data/host_table.json (APHIS DA-2026-20 federal list + CCR 3417 state list).
+# Fahad: check every row, fix anything wrong, then change the first line to 'reviewed_by_human: true'.
+# host_status is 'unclear' for frozen/processed/dried/mixed products by design.
+id,canonical_commodity,host_status
+SR-1001,meyer lemon,host
+SR-1002,avocado,host
+SR-1003,orange,host
+SR-1004,onion,not_host
+SR-1005,persimmon,host
+SR-1006,orange,host
+SR-1007,avocado,host
+SR-1008,orange,host
+SR-1009,tomato,not_host
+SR-1010,avocado,host
+SR-1011,romaine lettuce,not_host
+SR-1012,peach,host
+SR-1013,cilantro,not_host
+SR-1014,mixed fruit,unclear
+SR-1015,avocado,unclear
+SR-1016,orange,unclear
+SR-1017,mango,unclear
+SR-1018,plum,host
+SR-1019,grapefruit,host
+SR-1020,strawberry,not_host
+SR-1021,pomegranate,host
+SR-1022,tangelo,host
+SR-1023,nectarine,host
+SR-1024,mandarin,host
+SR-1025,avocado,host

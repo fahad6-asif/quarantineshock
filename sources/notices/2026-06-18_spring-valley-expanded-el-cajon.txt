@@ -1,0 +1,10 @@
+# title: Spring Valley expanded to El Cajon
+# effective_date: 2026-06-18
+# source: APHIS DA-2026-36: APHIS Expands Mexican Fruit Fly Quarantine in San Diego County, California <https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county> (retrieved 2026-10-10); CDFA Official Notice: Amendment to the Proclamation of Emergency Program for the Mexican Fruit Fly (Spring Valley / El Cajon) <https://www.sandiegocounty.gov/content/dam/sdc/awm/docs/MXFF_PEP_SpringValley_SanDiegoCounty_Amd2_20260624_SoF.pdf> (retrieved 2026-10-10); County News Center: Mexican Fruit Fly Quarantine Expanded in San Diego County <https://www.countynewscenter.com/mexican-fruit-fly-quarantine-expanded-in-san-diego-county/> (retrieved 2026-10-10)
+# note: verbatim excerpt(s); see manifest.json
+# ---
+On June 18, CDFA expanded the Spring Valley quarantine in response to the June 12 detection of one wild mated female from a trap in a grapefruit tree on a residential property in the city of El Cajon. The amended quarantine encompassed approximately 111 square miles and contained 338.5 acres of commercial agriculture that includes avocado, citrus, stone fruit, and tomatoes.
+
+The emergency program area is the entirety of the Mexfly quarantine area within San Diego County, which became effective on June 18, 2026. The emergency program area encompasses all properties within a 4.5-mile radius of all Mexfly detections.
+
+The quarantine restricts movement of host fruits and plants for growers, wholesalers, retailers, and nurseries. Home gardeners are urged to consume homegrown produce onsite and avoid transporting fruit off their property to prevent spreading the pest.

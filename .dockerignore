@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+**/node_modules
+**/__pycache__
+**/*.pyc
+backend/.venv
+backend/data
+.pytest_cache
+frontend/.next
+frontend/out
+frontend/test-results
+frontend/playwright-report
+.claude

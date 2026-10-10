@@ -1,0 +1,461 @@
+{
+  "avocado": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "passionfruit, purple granadilla Eskafi and Cunningham, 1987 Persea americana Mill.31 Avocado Bush, 1962 Pouteria campechiana (Kunth) Baehni",
+    "state_evidence": "Opuntia spp. Prickly pear cactus Passiflora edulis Passionfruit Persea americana Avocado1 Pouteria sapota Mammee sapote Prunus domestica Plum,",
+    "aliases": [
+      "hass avocado",
+      "avocados",
+      "avos",
+      "aguacate"
+    ]
+  },
+  "orange": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Cunningham, 19875 Citrus ×aurantium L. Bitter orange, bittersweet orange, clementine, guntur sour orange, Seville orange, sour orange,",
+    "state_evidence": "Updated 1-14-25 Citrus reticulata Mandarin orange, tangerine Citrus sinensis Common, Kona, blood, baladi, navel, Valencia, corriente or sweet",
+    "aliases": [
+      "navel orange",
+      "valencia orange",
+      "cara cara orange",
+      "blood orange",
+      "navels",
+      "juice oranges"
+    ]
+  },
+  "grapefruit": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Blanc, 196314 Citrus ×aurantium L. var. racemosa (Risso) ined.15 Grapefruit, pomelo Aluja et al., 1986; Aluja et al., 200016; Aluja et al.,",
+    "state_evidence": "citron Meyer lemon, dwarf lemon, Chinese dwarf lemon King orange Grapefruit Cleopatra mandarin, spice mandarin Updated 1-14-25 Citrus reticulata",
+    "aliases": [
+      "pink grapefruit",
+      "ruby red grapefruit"
+    ]
+  },
+  "lemon": {
+    "host": true,
+    "federal": true,
+    "state": false,
+    "federal_evidence": "200622; Molina-Nery et al., 201420; Pecina-Quintero, 200923 Citrus ×limon (L.) Osbeck Canton lemon, Chinese dwarf lemon, dwarf lemon,",
+    "state_evidence": null,
+    "aliases": [
+      "lemons",
+      "eureka lemon",
+      "lisbon lemon"
+    ]
+  },
+  "meyer lemon": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "dwarf lemon, dwarf lemon, lemon, mandarin lime, marmalade lime, Meyer lemon, Otaheite orange, Rangpur lime, red lemon, sweet lemon, sweet",
+    "state_evidence": "Citrus limettioides Citrus limonia Citrus maxima Citrus medica Citrus meyeri Citrus nobilis Citrus x paradisi Citrus reshni Common Name(s)",
+    "aliases": [
+      "meyer lemons"
+    ]
+  },
+  "lime": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "×aurantiifolia (Christm.) Swingle Egyptian lime, Indian lime, Key lime, lime, Mexican lime, sour lime, West Indian lime Eskafi and",
+    "state_evidence": "Casimiroa spp. Citrofortunella microcarpa (x Cirofortunella mitis) Citrus aurantiifolia Citrus aurantium Citrus deliciosa Citrus hassaku Citrus limetta",
+    "aliases": [
+      "key lime",
+      "mexican lime",
+      "limes"
+    ]
+  },
+  "mandarin": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "medica L. Buddha's-Hand, citron, finger citron Aluja et al., 1987 Citrus reticulata Blanco Culate mandarin, mandarin, mandarin orange, Swatow orange,",
+    "state_evidence": "Grapefruit Cleopatra mandarin, spice mandarin Updated 1-14-25 Citrus reticulata Mandarin orange, tangerine Citrus sinensis Common, Kona, blood,",
+    "aliases": [
+      "tangerine",
+      "clementine",
+      "satsuma",
+      "cuties"
+    ]
+  },
+  "tangelo": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "clementine, guntur sour orange, Seville orange, sour orange, tangelo Aluja and Díaz-Fleischer, 20066; Aluja et al., 19864; Aluja",
+    "state_evidence": "Kona, blood, baladi, navel, Valencia, corriente or sweet orange Citrus x tangelo Tangelo Citrus tangerina Tangerine, dancy tangerine Citrus unshiu",
+    "aliases": [
+      "minneola"
+    ]
+  },
+  "peach": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Baehni Eggfruit-tree, yellow sapote Orozco-Dávila et al., 2007 Prunus persica (L.) Batsch Peach Aluja et al., 2000; Eskafi and Cunningham,",
+    "state_evidence": "Avocado1 Pouteria sapota Mammee sapote Prunus domestica Plum, prune Prunus persica Peach, nectarine Psidium spp. All guava species Punica granatum",
+    "aliases": [
+      "yellow peach",
+      "white peach",
+      "peaches"
+    ]
+  },
+  "nectarine": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Baehni Eggfruit-tree, yellow sapote Orozco-Dávila et al., 2007 Prunus persica (L.) Batsch Peach Aluja et al., 2000; Eskafi and Cunningham,",
+    "state_evidence": "sapota Mammee sapote Prunus domestica Plum, prune Prunus persica Peach, nectarine Psidium spp. All guava species Punica granatum Pomegranate Pyrus",
+    "aliases": [
+      "nectarines"
+    ]
+  },
+  "plum": {
+    "host": true,
+    "federal": false,
+    "state": true,
+    "federal_evidence": null,
+    "state_evidence": "Passionfruit Persea americana Avocado1 Pouteria sapota Mammee sapote Prunus domestica Plum, prune Prunus persica Peach, nectarine Psidium spp. All",
+    "aliases": [
+      "plums",
+      "prune plum"
+    ]
+  },
+  "apricot": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "apricots"
+    ]
+  },
+  "cherry": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "sweet cherry",
+      "cherries"
+    ]
+  },
+  "apple": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Schltdl. & Cham. ex G. Don Ice cream bean Baker et al., 194427 Malus domestica (Suckow) Borkh. Apple Eskafi and Cunningham, 198728 Mammea americana",
+    "state_evidence": "kaki Japanese persimmon Inga jinicuil N/A Inga micheliana N/A Malus domestica Apple Malus pumila Apple Mammea americana Mammee-apple Mangifera",
+    "aliases": [
+      "apples",
+      "fuji apple",
+      "gala apple"
+    ]
+  },
+  "pear": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "granatum L. Pomegranate Aluja et al., 2020; Jimenez et al., 1992 Pyrus communis L. Pear Aluja et al., 2020; Baker et al., 1944; Eskafi and Cunningham,",
+    "state_evidence": "nectarine Psidium spp. All guava species Punica granatum Pomegranate Pyrus communis Pear Sargentia spp. Sargentia Sideroxylon capiri N/A Spondias",
+    "aliases": [
+      "pears",
+      "bartlett pear"
+    ]
+  },
+  "mango": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "mammy-apple, tropical- apricot Baker et al., 1944; Bush, 1962 Mangifera indica L. Common mango, Indian mango, mango Aluja and Díaz-Fleischer,",
+    "state_evidence": "domestica Apple Malus pumila Apple Mammea americana Mammee-apple Mangifera indica Mango Melicoccus oliviformis Guaya Opuntia spp. Prickly pear",
+    "aliases": [
+      "mangoes",
+      "mangos",
+      "ataulfo mango"
+    ]
+  },
+  "pomegranate": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "al., 1986; Eskafi and Cunningham, 1987; Jimenez et al., 1992 Punica granatum L. Pomegranate Aluja et al., 2020; Jimenez et al., 1992 Pyrus",
+    "state_evidence": "Prunus persica Peach, nectarine Psidium spp. All guava species Punica granatum Pomegranate Pyrus communis Pear Sargentia spp. Sargentia Sideroxylon",
+    "aliases": [
+      "pomegranates"
+    ]
+  },
+  "persimmon": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "sinensis (L.) Osbeck cv Valencia 24 Citrus limetta Risso (Christm.) Diospyros kaki Thunb. Chinese persimmon, Japanese persimmon, kaki, kaki persimmon,",
+    "state_evidence": "mikan Coffea arabica. Arabian coffee Cydonia oblonga Quince Diospyros kaki Japanese persimmon Inga jinicuil N/A Inga micheliana N/A Malus",
+    "aliases": [
+      "fuyu persimmon",
+      "hachiya persimmon"
+    ]
+  },
+  "guava": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Batsch Peach Aluja et al., 2000; Eskafi and Cunningham, 1987 Psidium cattleyanum Sabine var. littorale (Raddi) Fosberg Cattley guava,",
+    "state_evidence": "Prunus domestica Plum, prune Prunus persica Peach, nectarine Psidium spp. All guava species Punica granatum Pomegranate Pyrus communis",
+    "aliases": [
+      "guavas",
+      "strawberry guava"
+    ]
+  },
+  "papaya": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "pubescens Ruiz & Pav. Apple chili, horse chili Thomas, 20043 Carica papaya L. Papaya, pawpaw Eskafi and Cunningham, 1987 Casimiroa edulis",
+    "state_evidence": "liebmanniana Annona reticulata Annona squamosa Capsicum pubescens Carica papaya Casimiroa spp. Citrofortunella microcarpa (x Cirofortunella",
+    "aliases": [
+      "papayas"
+    ]
+  },
+  "quince": {
+    "host": true,
+    "federal": false,
+    "state": true,
+    "federal_evidence": null,
+    "state_evidence": "Satsuma orange, unshiu, mikan Coffea arabica. Arabian coffee Cydonia oblonga Quince Diospyros kaki Japanese persimmon Inga jinicuil N/A Inga",
+    "aliases": []
+  },
+  "passion fruit": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Melicoccus oliviformis Kunth Guaya García-Ramírez et al., 201030 Passiflora edulis Sims Common passionfruit, granadilla, passionfruit, purple granadilla",
+    "state_evidence": "Melicoccus oliviformis Guaya Opuntia spp. Prickly pear cactus Passiflora edulis Passionfruit Persea americana Avocado1 Pouteria sapota Mammee",
+    "aliases": [
+      "passionfruit"
+    ]
+  },
+  "cherimoya": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Cashew, cashew nut, cashew apple Eskafi and Cunningham, 1987 Annona cherimola Mill. Custard-apple Baker et al., 1944 Annona cherimola Mill.",
+    "state_evidence": "plants: Scientific Name Acca sellowiana Anacardium occidentale Annona cherimola Annona liebmanniana Annona reticulata Annona squamosa Capsicum",
+    "aliases": []
+  },
+  "white sapote": {
+    "host": true,
+    "federal": true,
+    "state": true,
+    "federal_evidence": "Carica papaya L. Papaya, pawpaw Eskafi and Cunningham, 1987 Casimiroa edulis La Llave & Lex. Mexican-apple, white sapote Aluja et",
+    "state_evidence": "reticulata Annona squamosa Capsicum pubescens Carica papaya Casimiroa spp. Citrofortunella microcarpa (x Cirofortunella mitis) Citrus",
+    "aliases": []
+  },
+  "prickly pear": {
+    "host": true,
+    "federal": false,
+    "state": true,
+    "federal_evidence": null,
+    "state_evidence": "Mammee-apple Mangifera indica Mango Melicoccus oliviformis Guaya Opuntia spp. Prickly pear cactus Passiflora edulis Passionfruit Persea",
+    "aliases": [
+      "cactus pear",
+      "tuna fruit"
+    ]
+  },
+  "tomato": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "tomatoes",
+      "heirloom tomato",
+      "roma tomato",
+      "toms"
+    ]
+  },
+  "bell pepper": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "sweet pepper",
+      "capsicum"
+    ]
+  },
+  "romaine lettuce": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "romaine",
+      "romaine hearts",
+      "lettuce"
+    ]
+  },
+  "onion": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "onions",
+      "yellow onion",
+      "red onion"
+    ]
+  },
+  "cilantro": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "coriander"
+    ]
+  },
+  "celery": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": []
+  },
+  "broccoli": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": []
+  },
+  "carrot": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "carrots"
+    ]
+  },
+  "potato": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "potatoes"
+    ]
+  },
+  "cucumber": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "cucumbers"
+    ]
+  },
+  "strawberry": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "strawberries"
+    ]
+  },
+  "grape": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "table grapes",
+      "grapes"
+    ]
+  },
+  "spinach": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": []
+  },
+  "kale": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": []
+  },
+  "zucchini": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "squash"
+    ]
+  },
+  "garlic": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": []
+  },
+  "sweet corn": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "corn"
+    ]
+  },
+  "watermelon": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": []
+  },
+  "blueberry": {
+    "host": false,
+    "federal": false,
+    "state": false,
+    "federal_evidence": null,
+    "state_evidence": null,
+    "aliases": [
+      "blueberries"
+    ]
+  }
+}

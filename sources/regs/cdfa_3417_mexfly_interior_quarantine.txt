@@ -1,0 +1,222 @@
+# title: CCR Section 3417 Mexican Fruit Fly Interior Quarantine (updated 1-14-25)
+# url: https://www.cdfa.ca.gov/plant/mexfly/docs/regs/3417-TXT-mexfly.pdf
+# retrieved: 2026-10-10
+# ---
+Updated 1-14-25 
+Section 3417. Mexican Fruit Fly Interior Quarantine 
+ 
+A quarantine is established against the following pest, its hosts, and possible carriers: 
+ 
+A. Pest. Mexican fruit fly (Anastrepha ludens) 
+ 
+B. Area Under Quarantine. 
+1. An area shall be designated as under quarantine when survey results indicate 
+an infestation is present, the Department has defined the infested area and the 
+local California County Agricultural Commissioner(s) is notified and requests the 
+quarantine area be established. The Department shall also provide electronic 
+and/or written notification of the area designation(s) to other California County 
+Agricultural Commissioners and other interested or affected parties and post the 
+area description to its website at: www.cdfa.ca.gov/plant/mexfly/regulation.html . 
+An interested party may also go to the above website and elect to receive 
+automatic notifications of any changes in quarantine areas through the list serve 
+option. 
+2. If an area is not undergoing the sterile insect technique, an infestation is 
+present when eggs, a larva, a pupa, a mated female or five or more male or 
+unmated female Mexican fruit fly adults are detected within three miles of each 
+other and within one life cycle. In an area undergoing sterile insect technique the 
+criteria for an infestation are the same except a single mated female does not 
+constitute an infestation but counts towards an adult for five or more. 
+3. The initial area under quarantine shall be a minimum of 4.5 mile radius 
+surrounding the qualifying detections being used as an epicenter. Commercial 
+host properties shall not be split by the quarantine boundary line and the 
+boundary line shall be expanded beyond the 4.5 miles as necessary to 
+encompass such host material in its entirety. Wherever possible, known 
+accepted mapping features, including but not limited to roads, streets, highways, 
+creeks, streams, rivers, canals, city, county, State, park and forest boundary lines 
+
+Updated 1-14-25 
+are used first and if there are no acceptable features such as these then 
+imaginary lines with or without latitude and longitude points may be used. 
+4. Satellite infestations: Notwithstanding (b)(6), a detection of a single life stage of 
+Mexican fruit fly within any established quarantine area may be considered a 
+satellite infestation and may be used as the epicenter using an additional 4.5 mile 
+radius surrounding the detection to expand the quarantine area. 
+5. Any interested party or local entity may appeal an area designation by 
+submission to the Department of a written request for review of the designation 
+accompanied by clear and convincing evidence justifying a change in the 
+designation. The appeal must be filed no later than ten (10) working days 
+following receipt of the notice of designation. The Department must respond with 
+a written decision no later than ten (10) working days following the receipt of the 
+appeal. During the pending of the appeal, the designation under appeal shall 
+remain in effect. 
+6. The infested area designation shall be removed if no additional life stages are 
+detected by trapping or visual surveys for three life cycles after the last detection 
+that triggered the quarantine. Subsequent detections within the quarantine area 
+that are more than three miles from, or one lifecycle after, the detections 
+triggering the quarantine will not affect the area or duration of the quarantine 
+unless they meet the criteria in subsection (b)(2). 
+7. A life cycle is an estimate of insect phenology based on a heat degree day 
+temperature driven model. Base developmental temperature thresholds are used 
+in this model’s calculations and it estimates the generation time period necessary 
+for the completion of a generation of Mexican fruit fly. Daily minimum and 
+maximum temperatures are used to produce a sine curve over a 24 -hour period. 
+The degree days for that day are estimated by calculating the area above the 
+threshold and below the curve, assuming that the temperature curve is 
+symmetrical around the maximum temperature. For Mexican fruit fly the 
+Department uses the lifecycle model with 48.92° Fahrenheit (9.4° Celsius) base 
+developmental temperature and 1357 degree days Fahrenheit (754 degree days 
+Celsius) per generation. 
+
+Updated 1-14-25 
+C. Commodities Covered. The following are declared to be hosts and possible 
+carriers of Mexican fruit fly. 
+ 
+1. All fruit of the following plants: 
+ 
+ 
+Scientific Name 
+Acca sellowiana 
+Anacardium occidentale 
+Annona cherimola 
+Annona liebmanniana 
+Annona reticulata 
+Annona squamosa 
+Capsicum pubescens 
+Carica papaya 
+Casimiroa spp. 
+Citrofortunella microcarpa 
+(x Cirofortunella mitis) 
+Citrus aurantiifolia 
+Citrus aurantium 
+Citrus deliciosa 
+Citrus hassaku 
+Citrus limetta 
+Citrus limettioides 
+Citrus limonia 
+ 
+Citrus maxima 
+Citrus medica 
+Citrus meyeri 
+ 
+Citrus nobilis 
+Citrus x paradisi 
+Citrus reshni 
+Common Name(s) 
+Pineapple guava, feijoa 
+Cashew nut 
+Cherimoya 
+Hardshell custard apple 
+Custard apple 
+Sugar apple 
+Apple chile 
+Papaya 
+White sapote, yellow chapote, matasano 
+Calamondin 
+ 
+Lime 
+Sour orange 
+Italian tangerine, willow-leaf mandarin 
+Hassaku orange 
+Sweet lime 
+Sweet lime 
+Rangpur lime, canton lemon, sour lemon, 
+Mandarin lime 
+Pummelo, shaddock 
+Buddha's-Hand, citron, finger citron 
+Meyer lemon, dwarf lemon, Chinese dwarf 
+lemon 
+King orange 
+Grapefruit 
+Cleopatra mandarin, spice mandarin 
+
+Updated 1-14-25 
+Citrus reticulata Mandarin orange, tangerine 
+Citrus sinensis Common, Kona, blood, baladi, navel, Valencia, 
+ corriente or sweet orange 
+Citrus x tangelo Tangelo 
+Citrus tangerina Tangerine, dancy tangerine 
+Citrus unshiu Satsuma orange, unshiu, mikan 
+Coffea arabica. Arabian coffee 
+Cydonia oblonga Quince 
+Diospyros kaki Japanese persimmon 
+Inga jinicuil N/A 
+Inga micheliana N/A 
+Malus domestica Apple 
+Malus pumila Apple 
+Mammea americana Mammee-apple 
+Mangifera indica Mango 
+Melicoccus oliviformis Guaya 
+Opuntia spp. Prickly pear cactus 
+Passiflora edulis Passionfruit 
+Persea americana Avocado1 
+Pouteria sapota Mammee sapote 
+Prunus domestica Plum, prune 
+Prunus persica Peach, nectarine 
+Psidium spp. All guava species 
+Punica granatum Pomegranate 
+Pyrus communis Pear 
+Sargentia spp. Sargentia 
+Sideroxylon capiri N/A 
+Spondias spp. All mombin species 
+Syzygium jambos Rose-apple 
+Terminalia catappa. Tropical almond 
+1Fresh, mature green variety ‘Hass’ avocadoes are not regulated 
+
+Updated 1-14-25 
+ 
+2. Soil within the drip area of plants producing, or which have produced, fruit listed 
+in (C.1) above. 
+3. Any other product, article, or means of conveyance when it is determined by 
+the director or county agricultural commissioner to present a hazard of spreading 
+live Mexican fruit fly and the person in possession thereof has been so notified. 
+ 
+D. Restrictions: 
+1. At the wholesale level, articles and commodities covered which have been 
+commercially produced within the area under quarantine are prohibited 
+movement from or within the area under quarantine except in accordance with 
+the following provisions: 
+a. The commodity has been treated for Mexican fruit fly in a manner approved 
+by the director, is transported in a manner approved by the director to 
+preclude exposure to Mexican fruit fly, and is accompanied by a certificate, 
+verifying compliance with the above requirements, issued by the director or 
+county agricultural commissioner; or, 
+b. The commodity is moving for treatment for Mexican fruit fly or processing and 
+in a manner approved by the Secretary to preclude exposure to Mexican fruit 
+fly, and is accompanied by a written document affirming that movement has 
+been authorized by the Secretary or county agricultural commissioner. 
+2. At the wholesale level, articles and commodities covered which have been 
+commercially produced outside the area under quarantine are prohibited 
+movement into the area under quarantine except when accompanied by a 
+shipping document indicating the point of origin and destination and moved in 
+accordance with the following provisions: 
+a. The commodity is moving directly through the area under quarantine without 
+delay in an enclosed vehicle or completely enclosed by a covering to prevent 
+exposure to Mexican fruit fly; or, 
+
+Updated 1-14-25 
+b. The commodity is destined to a permanent wholesale or retail establishment 
+and is transported in an enclosed vehicle or completely enclosed by a 
+covering to prevent exposure to Mexican fruit fly; or, 
+c. The commodity is destined to a commercial processing facility. 
+3. At the retail level, articles and commodities covered which have been 
+commercially produced are prohibited movement from or within the area 
+under quarantine except when the person in possession has a sales slip or 
+other comparable document showing the commodity was purchased from a 
+commercial establishment. 
+4. Articles and commodities covered which have been non -commercially 
+produced within the area under quarantine, including "backyard" production, 
+are prohibited movement from the premises where grown except under written 
+authorization of the Secretary or county agricultural commissioner. 
+5. Articles and commodities covered which have been non -commercially 
+produced outside the area under quarantine are prohibited movement into the 
+area under quarantine except when the person in possession has signed a 
+statement showing the commodity, amount, origin, destination, and date of 
+transportation. 
+6. Within the area under quarantine, no wholesale or retail establishment shall 
+handle, sell or offer for sale any article or commodity covered unless such 
+commodities at all times are maintained in a manner approved by the Secretary 
+to preclude exposure to Mexican fruit fly. No commodity covered shall be held for 
+sale or sold from a truck, trailer, or other mobile vehicle. 
+ 
+Note: Authority: Sections 407, 5301, 5302 and 5322, Food and Agricultural 
+Code. Reference: Sections 5301, 5302 and 5322, Food and Agricultural Code.

@@ -1,0 +1,426 @@
+{
+  "computed_at": "2026-10-10T15:41:51.985027+00:00",
+  "runs_evaluated": 5,
+  "normalizer": {
+    "n": 25,
+    "canonical_accuracy": 1.0,
+    "host_status_accuracy": 1.0,
+    "confusion": {
+      "host": {
+        "host": 16,
+        "not_host": 0,
+        "unclear": 0
+      },
+      "not_host": {
+        "host": 0,
+        "not_host": 5,
+        "unclear": 0
+      },
+      "unclear": {
+        "host": 0,
+        "not_host": 0,
+        "unclear": 4
+      }
+    },
+    "rows": [
+      {
+        "id": "SR-1001",
+        "label": "meyer lemon",
+        "predicted": "meyer lemon",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1002",
+        "label": "avocado",
+        "predicted": "avocado",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1003",
+        "label": "orange",
+        "predicted": "orange",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 0.9,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1004",
+        "label": "onion",
+        "predicted": "onion",
+        "label_status": "not_host",
+        "predicted_status": "not_host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1005",
+        "label": "persimmon",
+        "predicted": "persimmon",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1006",
+        "label": "orange",
+        "predicted": "orange",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 0.9,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1007",
+        "label": "avocado",
+        "predicted": "avocado",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1008",
+        "label": "orange",
+        "predicted": "orange",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 0.9,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1009",
+        "label": "tomato",
+        "predicted": "tomato",
+        "label_status": "not_host",
+        "predicted_status": "not_host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1010",
+        "label": "avocado",
+        "predicted": "avocado",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 0.95,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1011",
+        "label": "romaine lettuce",
+        "predicted": "romaine lettuce",
+        "label_status": "not_host",
+        "predicted_status": "not_host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1012",
+        "label": "peach",
+        "predicted": "peach",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 0.95,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1013",
+        "label": "cilantro",
+        "predicted": "cilantro",
+        "label_status": "not_host",
+        "predicted_status": "not_host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1014",
+        "label": "mixed fruit",
+        "predicted": "mixed fruit",
+        "label_status": "unclear",
+        "predicted_status": "unclear",
+        "form": "mixed",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1015",
+        "label": "avocado",
+        "predicted": "avocado",
+        "label_status": "unclear",
+        "predicted_status": "unclear",
+        "form": "frozen",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1016",
+        "label": "orange",
+        "predicted": "orange",
+        "label_status": "unclear",
+        "predicted_status": "unclear",
+        "form": "processed",
+        "confidence": 0.9,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1017",
+        "label": "mango",
+        "predicted": "mango",
+        "label_status": "unclear",
+        "predicted_status": "unclear",
+        "form": "dried",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1018",
+        "label": "plum",
+        "predicted": "plum",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1019",
+        "label": "grapefruit",
+        "predicted": "grapefruit",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1020",
+        "label": "strawberry",
+        "predicted": "strawberry",
+        "label_status": "not_host",
+        "predicted_status": "not_host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1021",
+        "label": "pomegranate",
+        "predicted": "pomegranate",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1022",
+        "label": "tangelo",
+        "predicted": "tangelo",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1023",
+        "label": "nectarine",
+        "predicted": "nectarine",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1024",
+        "label": "mandarin",
+        "predicted": "mandarin",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      },
+      {
+        "id": "SR-1025",
+        "label": "avocado",
+        "predicted": "avocado",
+        "label_status": "host",
+        "predicted_status": "host",
+        "form": "fresh",
+        "confidence": 1.0,
+        "canonical_ok": true,
+        "status_ok": true
+      }
+    ],
+    "reviewed_by_human": false,
+    "method": "exact match of canonical name; host status = code lookup in the official host lists, 'unclear' for frozen/processed/dried/mixed forms"
+  },
+  "rules": {
+    "gold_count": 0,
+    "matched": 0,
+    "rows": [],
+    "extracted_count": 12,
+    "method": "keyword matching: a gold rule counts as found if one extracted rule contains all its keywords"
+  },
+  "grounding": {
+    "total": 85,
+    "verified": 80,
+    "supports": 65,
+    "judged": 80,
+    "verified_pct": 94.1,
+    "supports_pct": 81.2,
+    "per_run": [
+      {
+        "notice_id": "2026-03-05_la-mesa-established",
+        "total": 17,
+        "verified": 16,
+        "supports": 14,
+        "judged": 16,
+        "unverified": [
+          "rule R10"
+        ]
+      },
+      {
+        "notice_id": "2026-03-10_la-mesa-expanded",
+        "total": 17,
+        "verified": 16,
+        "supports": 13,
+        "judged": 16,
+        "unverified": [
+          "rule R10"
+        ]
+      },
+      {
+        "notice_id": "2026-04-02_la-mesa-expanded-da-2026-16",
+        "total": 17,
+        "verified": 16,
+        "supports": 12,
+        "judged": 16,
+        "unverified": [
+          "rule R10"
+        ]
+      },
+      {
+        "notice_id": "2026-06-16_spring-valley-established",
+        "total": 17,
+        "verified": 16,
+        "supports": 13,
+        "judged": 16,
+        "unverified": [
+          "rule R10"
+        ]
+      },
+      {
+        "notice_id": "2026-06-18_spring-valley-expanded-el-cajon",
+        "total": 17,
+        "verified": 16,
+        "supports": 13,
+        "judged": 16,
+        "unverified": [
+          "rule R10"
+        ]
+      }
+    ]
+  },
+  "zones": [
+    {
+      "notice_id": "2026-03-05_la-mesa-established",
+      "title": "La Mesa quarantine established",
+      "effective_date": "2026-03-05",
+      "generated": 63.6,
+      "official": 77.0,
+      "error_pct": -17.4
+    },
+    {
+      "notice_id": "2026-03-10_la-mesa-expanded",
+      "title": "La Mesa quarantine expanded",
+      "effective_date": "2026-03-10",
+      "generated": 63.6,
+      "official": 82.0,
+      "error_pct": -22.4
+    },
+    {
+      "notice_id": "2026-04-02_la-mesa-expanded-da-2026-16",
+      "title": "La Mesa expanded twice (DA-2026-16)",
+      "effective_date": "2026-04-02",
+      "generated": 63.6,
+      "official": 84.0,
+      "error_pct": -24.3
+    },
+    {
+      "notice_id": "2026-06-16_spring-valley-established",
+      "title": "Spring Valley quarantine established",
+      "effective_date": "2026-06-16",
+      "generated": 63.6,
+      "official": 76.0,
+      "error_pct": -16.3
+    },
+    {
+      "notice_id": "2026-06-18_spring-valley-expanded-el-cajon",
+      "title": "Spring Valley expanded to El Cajon",
+      "effective_date": "2026-06-18",
+      "generated": 100.8,
+      "official": 111.0,
+      "error_pct": -9.2
+    }
+  ],
+  "radius": {
+    "miles": 4.5,
+    "source": "sources",
+    "quote": "The initial area under quarantine shall be a minimum of 4.5 mile radius surrounding the qualifying detections being used as an epicenter.",
+    "chunk_id": "cdfa_3417#002",
+    "verified": true,
+    "verification": {
+      "verified": true,
+      "score": 100.0,
+      "judge": "supports"
+    }
+  }
+}

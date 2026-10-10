@@ -1,0 +1,6 @@
+# title: La Mesa quarantine expanded
+# effective_date: 2026-03-10
+# source: NAPPO Official Pest Report 1191: APHIS Establishes a Quarantine Area in California (Mexfly) <https://www.pestalerts.org/nappo/official-pest-reports/1191/> (retrieved 2026-10-10)
+# note: verbatim excerpt(s); see manifest.json
+# ---
+On March 10, APHIS and CDFA expanded the La Mesa quarantine in response to a confirmed detection on February 26 of one wild male Mexfly from a trap in a calamondin tree on a residential property in the city of La Mesa. The amended quarantine encompasses approximately 82 square miles and contains no commercial agriculture.

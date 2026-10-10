@@ -1,0 +1,6 @@
+# title: Spring Valley quarantine established
+# effective_date: 2026-06-16
+# source: APHIS DA-2026-36: APHIS Expands Mexican Fruit Fly Quarantine in San Diego County, California <https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county> (retrieved 2026-10-10)
+# note: verbatim excerpt(s); see manifest.json
+# ---
+On June 16, 2026, CDFA established a Mexfly quarantine in response to the June 4 detection of a wild mated female Mexfly from a trap in an avocado tree on a residential property in the city of Spring Valley, designated the Spring Valley quarantine. The quarantine encompassed approximately 76 square miles and contained 22.5 acres of commercial agriculture.

@@ -1,0 +1,6 @@
+{
+  "_note": "Approximate city/community centroids used only if Nominatim is unreachable. Detections are placed at town centroids and always marked approximate.",
+  "la mesa": {"lat": 32.7678, "lon": -117.0231, "label": "La Mesa, San Diego County, CA"},
+  "spring valley": {"lat": 32.7344, "lon": -116.9814, "label": "Spring Valley CDP, San Diego County, CA (Wikipedia center)"},
+  "el cajon": {"lat": 32.7948, "lon": -116.9625, "label": "El Cajon, San Diego County, CA"}
+}

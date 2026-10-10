@@ -1,0 +1,20 @@
+{
+  "la mesa": {
+    "lat": 32.76783,
+    "lon": -117.02308,
+    "label": "La Mesa, San Diego County, California, United States",
+    "source": "nominatim"
+  },
+  "spring valley": {
+    "lat": 32.7344,
+    "lon": -116.9814,
+    "label": "Spring Valley CDP, San Diego County, California (center per Wikipedia; Nominatim returned a ZIP 91978 point ~1.4 km east)",
+    "source": "wikipedia_cdp_center"
+  },
+  "el cajon": {
+    "lat": 32.79477,
+    "lon": -116.96253,
+    "label": "El Cajon, San Diego County, California, United States",
+    "source": "nominatim"
+  }
+}

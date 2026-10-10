@@ -1,0 +1,261 @@
+[
+  {
+    "id": "2026-03-05_la-mesa-established",
+    "file": "notices/2026-03-05_la-mesa-established.txt",
+    "type": "notice",
+    "title": "La Mesa quarantine established",
+    "effective_date": "2026-03-05",
+    "quarantine": "La Mesa",
+    "merges": null,
+    "stated_area_sq_mi": 77,
+    "publisher": "USDA APHIS via NAPPO",
+    "date": "2026-03-19",
+    "url": "https://www.pestalerts.org/nappo/official-pest-reports/1191/",
+    "source_quality": "primary",
+    "excerpt_of": [
+      {
+        "doc": "nappo_1191",
+        "title": "NAPPO Official Pest Report 1191: APHIS Establishes a Quarantine Area in California (Mexfly)",
+        "publisher": "USDA APHIS via NAPPO",
+        "published": "2026-03-19",
+        "url": "https://www.pestalerts.org/nappo/official-pest-reports/1191/",
+        "retrieved": "2026-10-10"
+      },
+      {
+        "doc": "nappo_1191",
+        "title": "NAPPO Official Pest Report 1191: APHIS Establishes a Quarantine Area in California (Mexfly)",
+        "publisher": "USDA APHIS via NAPPO",
+        "published": "2026-03-19",
+        "url": "https://www.pestalerts.org/nappo/official-pest-reports/1191/",
+        "retrieved": "2026-10-10"
+      }
+    ]
+  },
+  {
+    "id": "2026-03-10_la-mesa-expanded",
+    "file": "notices/2026-03-10_la-mesa-expanded.txt",
+    "type": "notice",
+    "title": "La Mesa quarantine expanded",
+    "effective_date": "2026-03-10",
+    "quarantine": "La Mesa",
+    "merges": null,
+    "stated_area_sq_mi": 82,
+    "publisher": "USDA APHIS via NAPPO",
+    "date": "2026-03-19",
+    "url": "https://www.pestalerts.org/nappo/official-pest-reports/1191/",
+    "source_quality": "primary",
+    "excerpt_of": [
+      {
+        "doc": "nappo_1191",
+        "title": "NAPPO Official Pest Report 1191: APHIS Establishes a Quarantine Area in California (Mexfly)",
+        "publisher": "USDA APHIS via NAPPO",
+        "published": "2026-03-19",
+        "url": "https://www.pestalerts.org/nappo/official-pest-reports/1191/",
+        "retrieved": "2026-10-10"
+      }
+    ]
+  },
+  {
+    "id": "2026-04-02_la-mesa-expanded-da-2026-16",
+    "file": "notices/2026-04-02_la-mesa-expanded-da-2026-16.txt",
+    "type": "notice",
+    "title": "La Mesa expanded twice (DA-2026-16)",
+    "effective_date": "2026-04-02",
+    "quarantine": "La Mesa",
+    "merges": null,
+    "stated_area_sq_mi": 84,
+    "publisher": "USDA APHIS",
+    "date": "2026-04-17",
+    "url": "https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-area-california",
+    "source_quality": "primary",
+    "excerpt_of": [
+      {
+        "doc": "aphis_da_2026_16",
+        "title": "APHIS DA-2026-16: APHIS Expands the Mexican Fruit Fly Quarantine Area in California",
+        "publisher": "USDA APHIS",
+        "published": "2026-04-17",
+        "url": "https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-area-california",
+        "retrieved": "2026-10-10"
+      }
+    ]
+  },
+  {
+    "id": "2026-06-16_spring-valley-established",
+    "file": "notices/2026-06-16_spring-valley-established.txt",
+    "type": "notice",
+    "title": "Spring Valley quarantine established",
+    "effective_date": "2026-06-16",
+    "quarantine": "Spring Valley",
+    "merges": null,
+    "stated_area_sq_mi": 76,
+    "publisher": "USDA APHIS",
+    "date": "2026-09-23",
+    "url": "https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county",
+    "source_quality": "primary",
+    "excerpt_of": [
+      {
+        "doc": "aphis_da_2026_36",
+        "title": "APHIS DA-2026-36: APHIS Expands Mexican Fruit Fly Quarantine in San Diego County, California",
+        "publisher": "USDA APHIS",
+        "published": "2026-09-23",
+        "url": "https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county",
+        "retrieved": "2026-10-10"
+      }
+    ]
+  },
+  {
+    "id": "2026-06-18_spring-valley-expanded-el-cajon",
+    "file": "notices/2026-06-18_spring-valley-expanded-el-cajon.txt",
+    "type": "notice",
+    "title": "Spring Valley expanded to El Cajon",
+    "effective_date": "2026-06-18",
+    "quarantine": "Spring Valley",
+    "merges": null,
+    "stated_area_sq_mi": 111,
+    "publisher": "USDA APHIS",
+    "date": "2026-09-23",
+    "url": "https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county",
+    "source_quality": "primary",
+    "excerpt_of": [
+      {
+        "doc": "aphis_da_2026_36",
+        "title": "APHIS DA-2026-36: APHIS Expands Mexican Fruit Fly Quarantine in San Diego County, California",
+        "publisher": "USDA APHIS",
+        "published": "2026-09-23",
+        "url": "https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county",
+        "retrieved": "2026-10-10"
+      },
+      {
+        "doc": "cdfa_pep_sv_amd2",
+        "title": "CDFA Official Notice: Amendment to the Proclamation of Emergency Program for the Mexican Fruit Fly (Spring Valley / El Cajon)",
+        "publisher": "CDFA",
+        "published": "2026-06-24",
+        "url": "https://www.sandiegocounty.gov/content/dam/sdc/awm/docs/MXFF_PEP_SpringValley_SanDiegoCounty_Amd2_20260624_SoF.pdf",
+        "retrieved": "2026-10-10"
+      },
+      {
+        "doc": "county_news_jun",
+        "title": "County News Center: Mexican Fruit Fly Quarantine Expanded in San Diego County",
+        "publisher": "County of San Diego",
+        "published": "2026-06-23",
+        "url": "https://www.countynewscenter.com/mexican-fruit-fly-quarantine-expanded-in-san-diego-county/",
+        "retrieved": "2026-10-10"
+      }
+    ]
+  },
+  {
+    "id": "2026-08-14_la-mesa-spring-valley-merged",
+    "file": "notices/2026-08-14_la-mesa-spring-valley-merged.txt",
+    "type": "notice",
+    "title": "La Mesa + Spring Valley merged (DA-2026-36)",
+    "effective_date": "2026-08-14",
+    "quarantine": "La Mesa",
+    "merges": [
+      "La Mesa",
+      "Spring Valley"
+    ],
+    "stated_area_sq_mi": 173,
+    "publisher": "USDA APHIS",
+    "date": "2026-09-23",
+    "url": "https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county",
+    "source_quality": "primary",
+    "excerpt_of": [
+      {
+        "doc": "aphis_da_2026_36",
+        "title": "APHIS DA-2026-36: APHIS Expands Mexican Fruit Fly Quarantine in San Diego County, California",
+        "publisher": "USDA APHIS",
+        "published": "2026-09-23",
+        "url": "https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county",
+        "retrieved": "2026-10-10"
+      }
+    ]
+  },
+  {
+    "id": "7cfr301_32",
+    "file": "regs/7cfr301_32.txt",
+    "title": "7 CFR 301.32 through 301.32-10 (Fruit Flies), eCFR as of 2026-10-08",
+    "publisher": "eCFR / National Archives",
+    "date": "2026-10-08",
+    "type": "regulation",
+    "url": "https://www.ecfr.gov/current/title-7/subtitle-B/chapter-III/part-301/subpart-L",
+    "retrieved": "2026-10-10",
+    "source_quality": "primary"
+  },
+  {
+    "id": "cdfa_3417",
+    "file": "regs/cdfa_3417_mexfly_interior_quarantine.txt",
+    "title": "CCR Section 3417 Mexican Fruit Fly Interior Quarantine (updated 1-14-25)",
+    "publisher": "CDFA",
+    "date": "2025-01-14",
+    "type": "regulation",
+    "url": "https://www.cdfa.ca.gov/plant/mexfly/docs/regs/3417-TXT-mexfly.pdf",
+    "retrieved": "2026-10-10",
+    "source_quality": "primary"
+  },
+  {
+    "id": "cdfa_processing",
+    "file": "regs/cdfa_options_processing.txt",
+    "title": "CDFA: Options for Host Fruit and Vegetables - Processing",
+    "publisher": "CDFA",
+    "date": null,
+    "type": "regulation",
+    "url": "https://www.cdfa.ca.gov/plant/PE/InteriorExclusion/current_options.html",
+    "retrieved": "2026-10-10",
+    "source_quality": "primary"
+  },
+  {
+    "id": "cdfa_mexfly_page",
+    "file": "regs/cdfa_mexfly.txt",
+    "title": "CDFA MEXFLY Regulation and Quarantine Boundaries page",
+    "publisher": "CDFA",
+    "date": null,
+    "type": "regulation",
+    "url": "https://www.cdfa.ca.gov/plant/mexfly/regulation.html",
+    "retrieved": "2026-10-10",
+    "source_quality": "primary"
+  },
+  {
+    "id": "cdfa_quarantine_text_lamesa",
+    "file": "regs/cdfa_quarantine_text_la_mesa_2026-08-14.txt",
+    "title": "CDFA Section 3417(b) La Mesa area quarantine boundary text, effective 8/14/2026",
+    "publisher": "CDFA",
+    "date": "2026-08-14",
+    "type": "regulation",
+    "url": "https://www.cdfa.ca.gov/plant/mexfly/docs/MexFly_Quarantine_SanDiego_County_Text_20260810.pdf",
+    "retrieved": "2026-10-10",
+    "source_quality": "primary"
+  },
+  {
+    "id": "cdfa_pep_sv_amd2",
+    "file": "regs/cdfa_official_notice_spring_valley_2026-06-24.txt",
+    "title": "CDFA Official Notice: Amendment to the Proclamation of Emergency Program for the Mexican Fruit Fly (Spring Valley / El Cajon)",
+    "publisher": "CDFA",
+    "date": "2026-06-24",
+    "type": "regulation",
+    "url": "https://www.sandiegocounty.gov/content/dam/sdc/awm/docs/MXFF_PEP_SpringValley_SanDiegoCounty_Amd2_20260624_SoF.pdf",
+    "retrieved": "2026-10-10",
+    "source_quality": "primary"
+  },
+  {
+    "id": "mexfly_hosts",
+    "file": "regs/mexfly_hosts.txt",
+    "title": "APHIS Federal Order DA-2026-20 + Mexican fruit fly Regulated Host List, 2026",
+    "publisher": "USDA APHIS",
+    "date": "2026-07-29",
+    "type": "host_list",
+    "url": "https://www.aphis.usda.gov/sites/default/files/da-2026-20.pdf",
+    "retrieved": "2026-10-10",
+    "source_quality": "primary"
+  },
+  {
+    "id": "county_news_jun",
+    "file": "regs/county_news_2026-06_expanded.txt",
+    "title": "County News Center: Mexican Fruit Fly Quarantine Expanded in San Diego County",
+    "publisher": "County of San Diego",
+    "date": "2026-06-23",
+    "type": "press_release",
+    "url": "https://www.countynewscenter.com/mexican-fruit-fly-quarantine-expanded-in-san-diego-county/",
+    "retrieved": "2026-10-10",
+    "source_quality": "primary"
+  }
+]
