@@ -1,150 +1,115 @@
----
-title: QuarantineShock
-emoji: 🪰
-colorFrom: green
-colorTo: gray
-sdk: docker
-app_port: 7860
-pinned: false
-short_description: Notice in, rules out, shipments flagged.
----
+# QuarantineShock
 
-# QuarantineShock 🪰
+Note: This project was made almost entirely with Claude Code as a hackathon entry. I did not write most of the code myself.
 
-**Notice in, rules out, shipments flagged.**
+Live demo: https://quarantineshock.onrender.com
 
-**▶ Live demo:** https://quarantineshock.onrender.com · **Code:** https://github.com/fahad6-asif/quarantineshock
+## What it is
 
-When the government expands a pest quarantine, QuarantineShock's AI agent reads the new notice, redraws the
-quarantine zone from the text, checks every shipment a distributor has scheduled, and says within minutes which
-loads need a compliance review. Every quote it shows is checked word-for-word against the real rules.
+QuarantineShock is a demo tool for pest quarantines. When the government expands a quarantine zone, the tool reads the new notice and redraws the zone on a map. It then checks a list of shipments and shows which ones need a compliance review. Every rule quote it shows is checked word for word against the real source text.
 
-> Decision support, not legal advice. Real public notices · fictional shipments · approximate zones.
+The demo uses real public notices about the Mexican fruit fly in San Diego County in 2026. The distributor (Sunridge Produce) and its 25 shipments are made up.
 
-## The story (real, 2026)
+This is decision support only. It is not legal advice.
 
-The Mexican fruit fly (*Anastrepha ludens*, "Mexfly") was found in La Mesa, San Diego County in February 2026.
+## The story behind the demo
 
-| Date (2026) | What happened | Official area | Commercial ag inside |
-|---|---|---|---|
-| Mar 5 | La Mesa quarantine established (Feb 24 detection) | ~77 sq mi | none |
-| Mar 10 | Expanded (Feb 26 detection) | ~82 sq mi | none |
-| Mar 17 / Apr 2 | Expanded twice. APHIS DA-2026-16 (Apr 17): *"contains no commercial agriculture"* | 84 sq mi | **none** |
-| **Jun 16** | New Spring Valley quarantine (Jun 4 detection, avocado tree) | ~76 sq mi | 22.5 acres |
-| **Jun 18** | Expanded after a Jun 12 detection in a grapefruit tree in **El Cajon** | ~111 sq mi | **338.5 acres**: avocado, citrus, stone fruit, tomatoes |
-| Aug 14 | La Mesa + Spring Valley merged (Aug 4 detection, tangelo tree) | 173 sq mi | 338.5 acres |
+In April 2026 the official notice said there was no commercial agriculture inside the quarantine area. On June 16 a new quarantine covered 22.5 acres of commercial farms. Two days later it was expanded and covered 338.5 acres. A distributor would have had to work out by hand which loads were now affected.
 
-In April the official word was "no commercial agriculture". Within 48 hours in June the zone held 338.5 acres of
-farms, and every distributor had to work out by hand which loads were affected.
+## How it works
 
-The demo distributor, **Sunridge Produce**, and its 25 pickups are **fictional**.
+1. The real documents in `sources/` are split into passages and stored in a local search index (ChromaDB).
+2. A new notice arrives and an agent (built with LangGraph) works through it in 10 steps:
+   1. Classify the notice (AI)
+   2. Extract the details (AI)
+   3. Find map coordinates for the detection places (geocoding)
+   4. Build the quarantine zone (code)
+   5. Find the relevant rules (AI and search)
+   6. Normalize the commodity names (AI and embeddings)
+   7. Match each shipment against the zone and rules (code only)
+   8. Check every quote against its source (code and an AI judge)
+   9. Draft actions such as an email and a driver note (AI)
+   10. Write a summary (AI)
+3. The results show up in the web app.
 
-## Run it (Windows, macOS, Linux)
+The main rule is that AI reads and writes, and plain code decides. Whether a load is flagged is decided in `backend/app/matching.py`, not by the AI. Whether a product is a host comes from a lookup in the official host lists.
 
-Needs Python 3.11+ and Node.js 20+. Run these from the project folder, in this order:
+Any quote that cannot be found word for word in its source is marked as unverified and left out of the drafts.
+
+The tool uses four statuses: Needs review, Unclear (human check), No flag: not a host, and No flag: outside zone. It never says "cleared" or "safe".
+
+## Run it on your computer
+
+You need Python 3.11 or newer and Node.js 20 or newer. Run these from the project folder:
 
 ```
 python scripts/setup.py
 python scripts/ingest.py
 python scripts/preflight.py
 python scripts/warm_cache.py
-npm run dev        # opens backend :8000 + frontend :3000
+npm run dev
 ```
 
-1. `setup.py` creates the Python venv, installs everything, and creates `.env` from `.env.example`.
-   **Paste your `GEMINI_API_KEY` into `.env`.**
-2. `ingest.py` turns the real documents in `sources/` into searchable passages (local embeddings, no API quota).
-3. `preflight.py` checks keys, providers, the index and the data files.
-4. `warm_cache.py` runs every notice through the agent once and caches every AI answer, so the demo also works with **no internet**.
-5. Open http://localhost:3000.
+Then open http://localhost:3000.
 
-### Before presenting
-Command Center → ⚙ Settings → **Reset & fast-forward to Jun 16**, then press **N** for the June 18 notice.
-Keyboard: `N` processes the next notice, `←/→` scrubs the timeline, `Esc` closes drawers.
+* `setup.py` creates the Python environment, installs everything and creates a `.env` file from `.env.example`. Put your `GEMINI_API_KEY` in that file.
+* `ingest.py` builds the search index from the documents in `sources/`.
+* `preflight.py` checks your keys, the index and the data files.
+* `warm_cache.py` runs every notice once and saves the AI answers, so the demo also works with no internet.
 
-## The 2-minute demo
-1. **Story** (arrow keys): April said no farms; June 18: 338.5 acres.
-2. **Launch** → the map shows the June 16 state.
-3. **Press N**: Agent Activity runs live (10 steps). The zone grows to El Cajon and the counter jumps to **4 newly flagged**.
-4. **The avocado truck (SR-1007)**: *No flag: outside zone* → **Needs review**. The drawer shows verified rule quotes,
-   a checklist (including California's conditional Hass exemption), a draft email and a driver hold note → **Hold shipment**.
-5. **Ask the Rules**: "Can I ship frozen avocado pulp from El Cajon?" It quotes the federal "frozen below −17.8 °C (0 °F)"
-   rule, says the sources don't settle it, and names who to confirm with.
-6. **Evals**: normalizer accuracy, citation grounding, zone area error, limits.
+See `HOW_TO_USE.md` for a short walkthrough of the demo.
 
-## How it works
+## AI settings
 
-```
-sources/ (real APHIS/CDFA notices, 7 CFR 301.32, CCR 3417, 2026 host list)
-   └─► ingest: chunk + local embeddings ─► ChromaDB
-Notice arrives ─► LangGraph agent (10 steps, each streamed live to the UI)
-  1 classify_notice   AI     4 build_zone      code (+AI finds the radius in the sources)   7 match            CODE ONLY
-  2 extract_notice    AI     5 extract_rules   AI + RAG                                      8 verify_citations code + AI judge
-  3 geocode           tool   6 normalize       AI + embeddings (host status: code lookup)   9 draft_actions    AI   10 summarize AI
-```
+Set `LLM_PROVIDER` in `.env`:
 
-* **AI reads and writes. Plain code decides.** Whether a load is flagged is decided by `backend/app/matching.py`
-  (unit-tested). Host status comes from a code lookup in the official host lists, not from the AI.
-* **Every quote is verified** (`backend/app/verify.py`): it must appear word-for-word in its source, or it's marked
-  unverified and kept out of the drafts. Example: the verifier caught the AI inventing the second half of a CCR 3417 clause.
-* **Status vocabulary:** Needs review · Unclear: human check · No flag: not a host · No flag: outside zone. The tool never says "cleared" or "safe".
+* `auto`: saved answers first, then Gemini, then OpenRouter
+* `gemini` or `openrouter`: use only that provider
+* `replay`: saved answers only, no internet needed
 
-## LLM providers (`.env`)
-
-| Setting | Meaning |
-|---|---|
-| `LLM_PROVIDER=auto` | cache → Gemini → OpenRouter → closest cached answer (labelled) |
-| `gemini` / `openrouter` | that live provider only |
-| `replay` | cache only, zero network (demo insurance) |
-| `GEMINI_MODEL_FAST` / `_STRONG` | `gemini-3.5-flash-lite` / `gemini-3.5-flash`: fastest on the free tier when tested on 2026-10-10 (3.8-flash took ~4 min per reply) |
-| `GEMINI_MODEL_BACKUP` | `gemini-2.5-flash`, used automatically if the main model is overloaded |
-| `OPENROUTER_MODEL` | `openai/gpt-oss-120b`: automatic backup when Gemini errors, hits its limit or doesn't answer within `GEMINI_TIMEOUT_S` (40 s). About $0.04 / $0.17 per 1M tokens in/out |
-
-You can also switch the provider at runtime in Settings. The header pill shows provider health.
+The saved answers are in `backend/.cache/`. They are why the demo runs without any API keys. You only need `GEMINI_API_KEY` (and optionally `OPENROUTER_API_KEY`) to ask new questions in the chat.
 
 ## Tests
 
 ```
-npm test                 # backend pytest (36 tests: zones, matching, verifier, LLM fallback, API + SSE)
-npm run e2e              # Playwright demo path in replay mode (needs warm_cache.py first)
+npm test
+npm run e2e
 ```
 
-## Limits (read these)
-* **Zones are approximate.** Notices name towns, not trap addresses, so detections sit at town centers with the
-  official 4.5-mile radius. Official boundaries follow roads and are widened so farms aren't split (CCR 3417(b)(3)),
-  so generated areas run smaller: Jun 18 −9%, Aug 14 merge −30%.
-* **Ambiguous products** (frozen, processed, dried, mixed) always go to a human.
-* **Tomatoes are not on either Mexfly host list** (federal DA-2026-20 or CCR 3417), so "heirloom toms" gets
-  *No flag: not a host*, even though the June notice says the zone's farms grow tomatoes.
-* The June 16 / June 18 / Aug 14 notice texts are verbatim excerpts of APHIS DA-2026-36 (published Sep 23, 2026) and CDFA documents.
-* Basemap tiles need internet. Everything else works offline in replay mode.
+`npm test` runs the backend tests. `npm run e2e` runs a browser test in replay mode and needs `warm_cache.py` to have been run first.
+
+## Limits
+
+* Zones are approximate. The notices name towns, not exact trap addresses, so the tool puts each detection at the town center with the official 4.5 mile radius. Official boundaries follow roads, so the generated areas come out smaller.
+* Products that are frozen, processed, dried or mixed always go to a human.
+* Tomatoes are not on either host list, so the tool does not flag them.
+* The June 16, June 18 and August 14 notice texts are word for word excerpts of the real APHIS and CDFA documents.
+* `data/labels.csv` is a draft answer key that a person has not reviewed yet.
+* The map background needs internet. Everything else works offline in replay mode.
 
 ## Deployment
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/fahad6-asif/quarantineshock)
 
-The `Dockerfile` builds one container (static website + API) and `render.yaml` deploys it on Render's free
-tier. It also runs on Hugging Face Spaces or any Docker host. A GitHub Action (`.github/workflows/keepalive.yml`)
-pings the site every 10 minutes so the free instance doesn't fall asleep. The saved AI answers in `backend/.cache/` ship with it, so the demo works with
-no API keys. To let visitors ask new chat questions live, add `GEMINI_API_KEY` (and optionally `OPENROUTER_API_KEY`)
-as secrets in the Space settings.
-* `data/labels.csv` is a draft answer key until a human reviews it.
+The `Dockerfile` builds one container with the website and the API. `render.yaml` deploys it on Render's free tier. A GitHub Action (`.github/workflows/keepalive.yml`) pings the site every 10 minutes so the free instance does not fall asleep.
 
-## Sources (all fetched 2026-10-10; full list in `sources/manifest.json`)
-* USDA APHIS [DA-2026-16](https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-area-california), [DA-2026-36](https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county), [DA-2026-20 host lists](https://www.aphis.usda.gov/news/program-update/aphis-establishes-host-lists-regulated-articles-three-tephritid-fruit-fly)
+To let visitors ask new chat questions on the live site, add `GEMINI_API_KEY` (and optionally `OPENROUTER_API_KEY`) as environment variables in Render.
+
+## Sources
+
+All fetched on 2026-10-10. The full list is in `sources/manifest.json`.
+
+* USDA APHIS: [DA-2026-16](https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-area-california), [DA-2026-36](https://www.aphis.usda.gov/news/program-update/aphis-expands-mexican-fruit-fly-anastrepha-ludens-quarantine-san-diego-county), [DA-2026-20 host lists](https://www.aphis.usda.gov/news/program-update/aphis-establishes-host-lists-regulated-articles-three-tephritid-fruit-fly)
 * [NAPPO Official Pest Report 1191](https://www.pestalerts.org/nappo/official-pest-reports/1191/)
-* [eCFR 7 CFR 301.32–301.32-10](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-III/part-301/subpart-L)
+* [eCFR 7 CFR 301.32](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-III/part-301/subpart-L)
 * CDFA: [CCR 3417 text](https://www.cdfa.ca.gov/plant/mexfly/docs/regs/3417-TXT-mexfly.pdf), [quarantine boundary text 8/14/2026](https://www.cdfa.ca.gov/plant/mexfly/docs/MexFly_Quarantine_SanDiego_County_Text_20260810.pdf), [processing options](https://www.cdfa.ca.gov/plant/PE/InteriorExclusion/current_options.html), [Official Notice, Spring Valley (Jun 24, 2026)](https://www.sandiegocounty.gov/content/dam/sdc/awm/docs/MXFF_PEP_SpringValley_SanDiegoCounty_Amd2_20260624_SoF.pdf)
 * [County of San Diego News Center](https://www.countynewscenter.com/mexican-fruit-fly-quarantine-expanded-in-san-diego-county/)
-* Basemap © [CARTO](https://carto.com/attributions), © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors. Geocoding: Nominatim / OpenStreetMap.
+* Map tiles by [CARTO](https://carto.com/attributions) and [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors. Geocoding by Nominatim.
 
-SDGs: 2 (resilient food supply), 12 (responsible production), 15 (invasive species).
-Roadmap (future, not built): the same engine for other pests, flood-affected crops and food recalls.
+## Project layout
 
-## Repo layout
 ```
-sources/   real documents (raw/ originals + extracted notices/ regs/ + manifest.json)
-data/      fictional shipments, draft answer key, host table, geocode cache
-backend/   FastAPI + LangGraph agent (app/), prompts (app/prompts/*.md), tests/
-frontend/  Next.js app (src/), Playwright test (tests/e2e/)
-scripts/   setup, fetch_sources, build_sources, ingest, preflight, warm_cache, make_shipments
+sources/    the real documents (raw originals plus extracted text and a manifest)
+data/       made-up shipments, draft answer key, host table, geocode cache
+backend/    FastAPI and LangGraph agent, prompts and tests
+frontend/   Next.js app and browser test
+scripts/    setup, ingest, preflight, warm_cache and other helpers
 ```
